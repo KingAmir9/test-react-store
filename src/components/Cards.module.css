@@ -1,0 +1,7 @@
+.conteiner{
+    display: flex;
+    margin: 20px 0px 17px;
+    /* background: #fff; */
+    border-radius: 10px;
+    justify-content: space-between;
+}
