@@ -7,9 +7,10 @@
   
   @font-face {
     font-family: "vazir";
-    font-weight: 700;
+    font-weight: 600;
     font-style: normal;
     src: url("./components/Fonts/Vazir-Bold.woff") format("woff");
+
   }
 
 * {
