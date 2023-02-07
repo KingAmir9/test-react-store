@@ -15,8 +15,7 @@ import Productsingel from './components/Productsingel';
 import './index.css';
 import SignUp from './components/SignUp';
 import Login from './components/Login';
-// import axios from 'axios';
-// import SendPost from './SendPost';
+
 
 class App extends Component {
 
