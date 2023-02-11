@@ -1,15 +1,35 @@
 import './App.css';
+import { Switch, Route, Redirect } from 'react-router-dom';
 
 // Components
 import Store from './components/Store';
+import ProductDetails from './components/ProductDetails';
+import Navbar from './components/shared/Navbar';
+
 
 // Context
 import ProductContextProvider from './context/ProductContextProvider';
-
+import CartContextProvider from './context/CartContextProvider';
+import ShopCart from './components/ShopCart';
+ 
 function App() {
   return (
     <ProductContextProvider>
-      <Store />
+      <CartContextProvider>
+        <Navbar/> 
+        <Switch>
+          {/* <Route path="/products/:id" component={ProductDetails} />
+          <Route path="/products" component={Store} />
+          <Redirect to="/products" />
+         */}
+
+          <Route path="/posts/:id" component={ProductDetails} />
+          <Route path="/posts" component={Store} />
+          <Route path="/cart" component={ShopCart} />
+          <Redirect to="/posts" />
+
+        </Switch>
+      </CartContextProvider>
     </ProductContextProvider>
   );
 }

@@ -11,7 +11,7 @@ const Store = () => {
     const products = useContext(ProductsContext)
 
     return (
-        <div style={{display: "flex", flexWrap: "wrap", justifyContent: "space-between"}}>
+        <div style={{margin:"1rem", display: "flex", flexWrap: "wrap", justifyContent: "space-between"}}>
             {
                 products.map(product => <Product 
                                             key={product.id} 
